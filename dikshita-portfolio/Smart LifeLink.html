@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Smart LifeLink — Organ Transplant Platform | Dikshita G
+  </title>
+
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f5fb;
+      color: #252238;
+      line-height: 1.7;
+    }
+
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      padding: 25px 0;
+      background: white;
+      border-bottom: 1px solid #e8e3f2;
+    }
+
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #252238;
+    }
+
+
+    .logo span {
+      color: #7657e8;
+    }
+
+
+    .back-link {
+      color: #7657e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      padding: 70px 0 30px;
+    }
+
+
+    .eyebrow {
+      color: #7657e8;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+
+    h1 {
+      font-size: clamp(32px, 5vw, 60px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+
+    .hero p {
+      max-width: 780px;
+      color: #6f6a80;
+      font-size: 18px;
+    }
+
+
+    /* =========================
+       HERO PROJECT IMAGE
+    ========================= */
+
+    .project-image {
+      width: 100%;
+      max-height: 560px;
+      object-fit: cover;
+      display: block;
+      border-radius: 22px;
+      margin: 30px 0 45px;
+      background: #eae5f7;
+      box-shadow: 0 15px 40px rgba(50, 35, 90, 0.08);
+    }
+
+
+    /* =========================
+       PROJECT INFORMATION
+    ========================= */
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+
+    .info-box,
+    .case-study {
+      background: white;
+      border: 1px solid #e8e3f2;
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+
+    .info-box h3,
+    .case-study h2 {
+      margin-bottom: 12px;
+    }
+
+
+    .info-box p,
+    .case-study p,
+    .case-study li {
+      color: #6f6a80;
+    }
+
+
+    .case-study ul,
+    .case-study ol {
+      padding-left: 22px;
+    }
+
+
+    .case-study li {
+      margin-bottom: 8px;
+    }
+
+
+    /* =========================
+       SCREENSHOTS
+    ========================= */
+
+    .screens-title {
+      margin: 45px 0 20px;
+      font-size: 28px;
+    }
+
+
+    .screens-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-bottom: 45px;
+    }
+
+
+    .screen-card {
+      background: white;
+      border: 1px solid #e8e3f2;
+      border-radius: 18px;
+      padding: 15px;
+      overflow: hidden;
+    }
+
+
+    .screen-card img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+      background: #eeeaf8;
+    }
+
+
+    .screen-card h3 {
+      padding: 15px 5px 5px;
+      font-size: 18px;
+    }
+
+
+    .screen-card p {
+      padding: 0 5px 8px;
+      color: #6f6a80;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       WORKFLOW / DESIGN IMAGES
+    ========================= */
+
+    .wide-image {
+      width: 100%;
+      border-radius: 18px;
+      display: block;
+      margin: 20px 0;
+      background: #eeeaf8;
+    }
+
+
+    /* =========================
+       TAGS
+    ========================= */
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+
+    .tag {
+      padding: 8px 14px;
+      background: #f0ebff;
+      color: #7657e8;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    .button {
+      display: inline-block;
+      padding: 13px 23px;
+      border-radius: 50px;
+      background: #7657e8;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 15px 0 60px;
+      transition: 0.3s;
+    }
+
+
+    .button:hover {
+      background: #5d40c8;
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: #6f6a80;
+      border-top: 1px solid #e8e3f2;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .details-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .screens-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .nav {
+        gap: 15px;
+      }
+
+
+      .info-box,
+      .case-study {
+        padding: 22px;
+      }
+
+
+      .screen-card img {
+        height: auto;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header>
+
+    <div class="container nav">
+
+      <a
+        href="Dikshita_Portfolio_EmailJS_Corrected.html"
+        class="logo"
+      >
+        Dikshita<span>.</span>
+      </a>
+
+
+      <a
+        href="Dikshita_Portfolio_EmailJS_Corrected.html"
+        class="back-link"
+      >
+        ← Back to Portfolio
+      </a>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================= -->
+
+  <main>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="eyebrow">
+          Project Case Study
+        </div>
+
+
+        <h1>
+          Smart LifeLink — Organ Transplant Platform
+        </h1>
+
+
+        <p>
+
+          An AI-powered organ transplant management platform
+          designed to connect donors, recipients, administrators,
+          and transport teams through a centralized digital
+          healthcare workflow.
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MAIN PROJECT IMAGE
+    ========================= -->
+
+    <section>
+
+      <div class="container">
+
+        <!--
+          Replace this with your main Smart LifeLink
+          project screenshot.
+        -->
+
+        <img
+          src="lifelink-cover.png"
+          alt="Smart LifeLink Organ Transplant Platform"
+          class="project-image"
+        />
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROJECT INFORMATION
+    ========================= -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="details-grid">
+
+
+          <div class="info-box">
+
+            <h3>
+              Project Type
+            </h3>
+
+            <p>
+              Healthcare / Organ Transplant Management Platform
+            </p>
+
+          </div>
+
+
+          <div class="info-box">
+
+            <h3>
+              My Role
+            </h3>
+
+            <p>
+              UI/UX Designer and Project Developer
+            </p>
+
+          </div>
+
+
+          <div class="info-box">
+
+            <h3>
+              Platform
+            </h3>
+
+            <p>
+              Web Application
+            </p>
+
+          </div>
+
+
+          <div class="info-box">
+
+            <h3>
+              Technologies Used
+            </h3>
+
+            <p>
+              AI, PostgreSQL, REST APIs, Blockchain Concepts,
+              Responsive UI Design
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- TECHNOLOGY TAGS -->
+
+        <div class="tags">
+
+          <span class="tag">
+            AI Matching
+          </span>
+
+          <span class="tag">
+            Organ Management
+          </span>
+
+          <span class="tag">
+            Donor
+          </span>
+
+          <span class="tag">
+            Recipient
+          </span>
+
+          <span class="tag">
+            Transport Tracking
+          </span>
+
+          <span class="tag">
+            Admin Dashboard
+          </span>
+
+          <span class="tag">
+            PostgreSQL
+          </span>
+
+          <span class="tag">
+            REST API
+          </span>
+
+        </div>
+
+
+
+        <!-- =========================
+             1. PROJECT OVERVIEW
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            1. Project Overview
+          </h2>
+
+
+          <p>
+
+            Smart LifeLink is an organ transplant management
+            platform designed to organize and simplify the
+            different stages of the transplant coordination
+            process.
+
+            <br><br>
+
+            The platform brings together donor information,
+            recipient requirements, organ matching,
+            administrative management, and organ transportation
+            into a connected digital workflow.
+
+            <br><br>
+
+            The goal of the project is to provide a centralized
+            platform where authorized users can manage important
+            transplant-related information efficiently.
+
+          </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             2. PROBLEM STATEMENT
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            2. Problem Statement
+          </h2>
+
+
+          <p>
+
+            Organ transplantation involves multiple participants
+            and requires coordination between donors, recipients,
+            medical teams, administrators, and transportation
+            teams.
+
+            <br><br>
+
+            Managing this information through disconnected
+            systems can make the workflow difficult to organize
+            and monitor.
+
+            <br><br>
+
+            Smart LifeLink explores a centralized platform that
+            can organize transplant information and provide
+            visibility across different stages of the workflow.
+
+          </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             3. OBJECTIVES
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            3. Project Objectives
+          </h2>
+
+
+          <ul>
+
+            <li>
+              Create a centralized organ transplant management
+              platform.
+            </li>
+
+            <li>
+              Manage donor and recipient information.
+            </li>
+
+            <li>
+              Support organ matching between suitable donors
+              and recipients.
+            </li>
+
+            <li>
+              Provide an organized administrative dashboard.
+            </li>
+
+            <li>
+              Monitor organ transportation.
+            </li>
+
+            <li>
+              Maintain organized records and audit information.
+            </li>
+
+            <li>
+              Create a clear and user-friendly healthcare
+              interface.
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!-- =========================
+             4. MAIN FEATURES
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            4. Main Features
+          </h2>
+
+
+          <ul>
+
+            <li>
+
+              <strong>Donor Management:</strong>
+
+              Stores and manages donor-related information
+              within the platform.
+
+            </li>
+
+
+            <li>
+
+              <strong>Recipient Management:</strong>
+
+              Organizes recipient requirements and
+              transplant-related information.
+
+            </li>
+
+
+            <li>
+
+              <strong>AI-Based Matching:</strong>
+
+              Explores intelligent matching between donor
+              organs and recipient requirements.
+
+            </li>
+
+
+            <li>
+
+              <strong>Transport Tracking:</strong>
+
+              Provides a workflow for monitoring the movement
+              of organs during transportation.
+
+            </li>
+
+
+            <li>
+
+              <strong>Admin Dashboard:</strong>
+
+              Allows authorized administrators to manage
+              platform information and activities.
+
+            </li>
+
+
+            <li>
+
+              <strong>Audit and Records:</strong>
+
+              Organizes important activity and transaction
+              records for traceability.
+
+            </li>
+
+
+            <li>
+
+              <strong>Healthcare Workflow:</strong>
+
+              Connects different users and stages of the
+              transplant management process.
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!-- =========================
+             5. INTERFACE SCREENS
+        ========================= -->
+
+        <h2 class="screens-title">
+          5. Interface Screens
+        </h2>
+
+
+        <div class="screens-grid">
+
+
+          <!-- DONOR -->
+
+          <div class="screen-card">
+
+            <img
+              src="lifelink-donor.png"
+              alt="Smart LifeLink Donor Dashboard"
+            />
+
+
+            <h3>
+              Donor Dashboard
+            </h3>
+
+
+            <p>
+
+              Interface for managing donor information
+              and organ-related details.
+
+            </p>
+
+          </div>
+
+
+
+          <!-- RECIPIENT -->
+
+          <div class="screen-card">
+
+            <img
+              src="lifelink-recipient.png"
+              alt="Smart LifeLink Recipient Dashboard"
+            />
+
+
+            <h3>
+              Recipient Dashboard
+            </h3>
+
+
+            <p>
+
+              Provides recipient information and
+              transplant requirements.
+
+            </p>
+
+          </div>
+
+
+
+          <!-- MATCHING -->
+
+          <div class="screen-card">
+
+            <img
+              src="lifelink-matching.png"
+              alt="Smart LifeLink AI Organ Matching"
+            />
+
+
+            <h3>
+              AI Organ Matching
+            </h3>
+
+
+            <p>
+
+              Displays matching information between
+              available organs and recipient requirements.
+
+            </p>
+
+          </div>
+
+
+
+          <!-- ADMIN -->
+
+          <div class="screen-card">
+
+            <img
+              src="lifelink-admin.png"
+              alt="Smart LifeLink Admin Dashboard"
+            />
+
+
+            <h3>
+              Admin Dashboard
+            </h3>
+
+
+            <p>
+
+              Centralized dashboard for managing users,
+              organs, recipients, and platform activities.
+
+            </p>
+
+          </div>
+
+
+
+          <!-- TRANSPORT -->
+
+          <div class="screen-card">
+
+            <img
+              src="lifelink-transport.png"
+              alt="Smart LifeLink Organ Transport Tracking"
+            />
+
+
+            <h3>
+              Transport Tracking
+            </h3>
+
+
+            <p>
+
+              Interface for monitoring the organ
+              transportation workflow.
+
+            </p>
+
+          </div>
+
+
+
+          <!-- AUDIT -->
+
+          <div class="screen-card">
+
+            <img
+              src="lifelink-audit.png"
+              alt="Smart LifeLink Audit Records"
+            />
+
+
+            <h3>
+              Audit & Records
+            </h3>
+
+
+            <p>
+
+              Provides organized activity and
+              transaction records.
+
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             6. SYSTEM WORKFLOW
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            6. How the Platform Works
+          </h2>
+
+
+          <ol>
+
+            <li>
+              Donor information is registered in the platform.
+            </li>
+
+            <li>
+              Available organ information is recorded.
+            </li>
+
+            <li>
+              Recipient information and requirements are
+              entered into the system.
+            </li>
+
+            <li>
+              The matching system analyzes relevant donor
+              and recipient information.
+            </li>
+
+            <li>
+              Potential matches can be reviewed by
+              authorized users.
+            </li>
+
+            <li>
+              The transplant coordination workflow
+              proceeds according to the required process.
+            </li>
+
+            <li>
+              Transportation information can be monitored.
+            </li>
+
+            <li>
+              Relevant activities can be recorded for
+              administrative and audit purposes.
+            </li>
+
+          </ol>
+
+        </section>
+
+
+
+        <!-- =========================
+             WORKFLOW IMAGE
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            7. System Workflow
+          </h2>
+
+
+          <!--
+            Replace this with your actual
+            Smart LifeLink workflow diagram.
+          -->
+
+          <img
+            src="lifelink-workflow.png"
+            alt="Smart LifeLink System Workflow"
+            class="wide-image"
+          />
+
+
+          <p>
+
+            The platform connects donor management,
+            recipient management, matching, administration,
+            and transportation into a single workflow.
+
+          </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             8. UI/UX DESIGN
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            8. Design and User Experience
+          </h2>
+
+
+          <p>
+
+            The Smart LifeLink interface is designed around
+            clarity, structured information, and easy
+            navigation.
+
+            <br><br>
+
+            Healthcare-related information can contain
+            multiple data points, so the interface uses
+            organized dashboards, cards, tables, and
+            status indicators to make information easier
+            to understand.
+
+            <br><br>
+
+            Different user roles are separated so that
+            relevant information and actions can be
+            presented according to the user's responsibilities.
+
+          </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             9. DESIGN PROCESS
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            9. Design Process
+          </h2>
+
+
+          <img
+            src="lifelink-process.png"
+            alt="Smart LifeLink UX Design Process"
+            class="wide-image"
+          />
+
+
+          <p>
+
+            The design process involved understanding the
+            transplant-management workflow, defining the
+            major user roles, organizing information
+            architecture, creating interface layouts,
+            designing dashboards, and refining the
+            overall user experience.
+
+          </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             10. MY CONTRIBUTION
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            10. My Contribution
+          </h2>
+
+
+          <ul>
+
+            <li>
+              Planned the overall platform structure.
+            </li>
+
+            <li>
+              Defined the major user flows.
+            </li>
+
+            <li>
+              Designed donor and recipient interfaces.
+            </li>
+
+            <li>
+              Designed the administrative dashboard.
+            </li>
+
+            <li>
+              Designed the organ matching interface.
+            </li>
+
+            <li>
+              Designed the transportation tracking workflow.
+            </li>
+
+            <li>
+              Organized information architecture.
+            </li>
+
+            <li>
+              Focused on usability and clear navigation.
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!-- =========================
+             11. TECHNOLOGIES
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            11. Technologies Used
+          </h2>
+
+
+          <ul>
+
+            <li>
+              AI / Machine Learning Concepts
+            </li>
+
+            <li>
+              PostgreSQL
+            </li>
+
+            <li>
+              REST APIs
+            </li>
+
+            <li>
+              Blockchain / Audit Concepts
+            </li>
+
+            <li>
+              Responsive Web Design
+            </li>
+
+            <li>
+              UI/UX Design
+            </li>
+
+            <li>
+              Figma
+            </li>
+
+            <li>
+              Postman
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!-- =========================
+             12. OUTCOME
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            12. Outcome and Learning
+          </h2>
+
+
+          <p>
+
+            Smart LifeLink provided practical experience in
+            designing a complex healthcare platform involving
+            multiple user roles and connected workflows.
+
+            <br><br>
+
+            The project helped explore information architecture,
+            dashboard design, healthcare data organization,
+            AI-assisted matching concepts, transportation
+            workflows, and administrative interfaces.
+
+            <br><br>
+
+            It also strengthened the ability to convert a
+            complex system into a structured and understandable
+            user experience.
+
+          </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             13. FUTURE IMPROVEMENTS
+        ========================= -->
+
+        <section class="case-study">
+
+          <h2>
+            13. Future Improvements
+          </h2>
+
+
+          <ul>
+
+            <li>
+              Improve AI-based matching models.
+            </li>
+
+            <li>
+              Add real-time transport monitoring.
+            </li>
+
+            <li>
+              Add more detailed analytics dashboards.
+            </li>
+
+            <li>
+              Improve notification and alert systems.
+            </li>
+
+            <li>
+              Add stronger role-based access controls.
+            </li>
+
+            <li>
+              Improve audit and record-management features.
+            </li>
+
+            <li>
+              Add multilingual accessibility.
+            </li>
+
+            <li>
+              Improve mobile responsiveness.
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!-- =========================
+             BACK BUTTON
+        ========================= -->
+
+        <a
+          href="Dikshita_Portfolio_EmailJS_Corrected.html"
+          class="button"
+        >
+          ← Back to Portfolio
+        </a>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div class="container">
+
+      © 2026 Dikshita G. All rights reserved.
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
